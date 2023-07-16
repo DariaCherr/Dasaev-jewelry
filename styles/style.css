@@ -288,10 +288,12 @@ a {
 }
 .property {
   padding: 23px 280px 102px;
-  text-align: center;
+  display: flex;
+  justify-content: space-between;
   max-width: 1900px;
   margin: 0 auto;
   position: relative;
+  text-align: center;
 }
 .property__item-text {
   margin-top: 30px;
@@ -314,22 +316,36 @@ a {
     margin-right: 30px;
   }
 }
+@media screen and (max-width: 953px) {
+  .property {
+    padding: 80px;
+  }
+}
 @media screen and (max-width: 800px) {
   .property {
-    padding: 0 80px 102px;
+    padding: 80px 20px;
   }
   .property__item:not(:last-child) {
     margin-right: 10px;
   }
 }
-@media screen and (max-width: 675px) {
+@media screen and (max-width: 554px) {
   .property {
-    padding: 0 20px 80px;
+    padding: 10px 20px;
   }
 }
-@media screen and (max-width: 542px) {
+@media screen and (max-width: 541px) {
   .property {
-    padding: 70px 20px 80px;
+    flex-direction: column;
+    padding-top: 70px;
+  }
+  .property__item {
+    display: flex;
+    justify-content: center;
+    margin-right: 0;
+  }
+  .property__item-text {
+    margin-left: 30px;
   }
 }
 .box {
@@ -503,7 +519,7 @@ a {
     padding: 120px 50px 160px;
   }
 }
-@media screen and (max-width: 542px) {
+@media screen and (max-width: 541px) {
   .banner {
     padding: 110px 20px 160px 50px;
   }
