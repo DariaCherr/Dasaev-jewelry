@@ -20,9 +20,9 @@ const swiper = new Swiper('.gallery-slider', {
         draggable: true,
     },
 
-    // mousewheel: {
-    //     enabled: true,
-    //     sensitivity: 10,
-    // },
+    mousewheel: {
+        enabled: true,
+        sensitivity: 10,
+    },
 
 });
