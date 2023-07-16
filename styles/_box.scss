@@ -1,0 +1,39 @@
+.box {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-right: 298px;
+    max-width: 1950px;
+    margin: 0 auto;
+    &__text {
+        margin: 0 34px 34px 0;
+        font-size: 1.4rem;
+    }
+}
+
+@media screen and (max-width: 1130px) {
+    .box {
+        justify-content: center;
+        padding-right: 0;
+    }
+}
+
+@media screen and (max-width: 870px) {
+    .box {
+        padding: 30px;
+        &__text {
+            margin: 0 20px 0 0;
+            font-size: 1.1rem;
+        }
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .box {
+        flex-direction: column;
+        &__text {
+            margin: 0 0 20px 0;
+            font-size: 1rem;
+        }
+    }
+}

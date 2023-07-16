@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/7432addfe6.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=El+Messiri:wght@400;500&family=Montserrat:wght@400;500&family=STIX+Two+Text:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="icon" href="favicon.ico.svg" type="image/x-icon">
+    <title>Ювелирная мастерская</title>
+</head>
+
+<body>
+    <div class="header-banner-bg">
+
+        <div class="header">
+            <div class="header__logo">
+                <a href="#" class="header__logo-lg"><img src="/icons/logo.svg" alt="logo"></a>
+                <span class="header__logo-text">ИЗЫСКАННЫЕ УКРАШЕНИЯ<br>С УНИКАЛЬНЫМ ДИЗАЙНОМ<br>НА ЗАКАЗ</span>
+            </div>
+            <div class="menu">
+                <div class="menu__socials">
+                    <a href="https://www.instagram.com/" class="menu__socials-item"><img src="/icons/instagram.svg" alt="instagram"></a>
+                    <a href="https://m.vk.com" class="menu__socials-item"><img src="/icons/vk.svg" alt="vk"></a>
+                    <a href="https://www.whatsapp.com/" class="menu__socials-item"><img src="/icons/whatsApp.svg" alt="WhatsApp"></a>
+                    <a href="https://web.telegram.org/a/" class="menu__socials-item"><img src="/icons/telegram.svg" alt="telegram"></a>
+                    <a href="mailto:Dasaev.studio@gmail.com" class="menu__socials-email">Dasaev.studio@gmail.com</a>
+                </div>
+                <div class="menu__callback">
+                    <a href="tel:+7 939 373-98-81"><span class="menu__callback-text">Обратный звонок</span></a>
+                    <a href="tel:+7 939 373-98-81">+7 939 373-98-81</a>
+                </div>
+            </div>
+            <div>
+                <a href="#" class="menu__burger-icon menu-burger">
+                    <i class="fa fa-bars"></i>
+                </a>
+                <div class="popup" id="popup"></div>
+            </div>
+        </div>
+        <div class="banner">
+            <div class="banner__main-info">
+                <h1 class="banner__title">ИЗГОТОВИМ<br>ЮВЕЛИРНОЕ ИЗДЕЛИЕ<br>ВАШЕЙ МЕЧТЫ</h1>
+                <p class="banner__title-text">На заказ в срок 7 дней</p>
+                <p class="banner__title-desc">Выразите свою яркую индивидуальность<br>с помощью уникального украшения</p>
+                <button class="button banner__button">Сделать заказ</button>
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <main>
+        <section class="property">
+            <div class="property__item">
+                <img src="/icons/property1.svg" alt="">
+                <p class="property__item-text"><span class="property__bold">Благородные металлы:<br>золото, серебро, платина<br></span><span class="property__grey">сертифицированы госинспекцией<br>пробирного надзора</span></p>
+            </div>
+            <div class="property__item">
+                <img src="/icons/property2.svg" alt="">
+                <p class="property__item-text"><span class="property__bold">Бессрочная гарантия<br></span><span class="property__grey">на украшения</span></p>
+            </div>
+            <div class="property__item">
+                <img src="/icons/property3.svg" alt="">
+                <p class="property__item-text"><span class="property__bold">Чистота драгоценных<br></span><span class="property__grey">камней подтверждена<br>сертификатами GIA</span></p>
+            </div>
+            <div class="property__item">
+                <img src="/icons/property4.svg" alt="">
+                <p class="property__item-text"><span class="property__bold">Бесплатное</span><br><span class="property__grey">сервисное обслуживание</span></p>
+            </div>
+        </section>
+
+        <section class="assortment">
+            <div class="assortment__left">
+                <img src="/img/ring.png" alt="ring">
+            </div>
+            <div class="assortment__right">
+                <h2 class="assortment__title">Ассортимент изделий</h2>
+                <p class="assortment__text">Мы хотим, чтобы вы сияли в любой ситуации: в день свадьбы, на ужине с друзьями и на деловой презентации. Лаконичный дизайн вне времени или россыпь роскошных разноцветных камней — выбор за вами.</p>
+            </div>
+        </section>
+
+        <section class="gallery">
+            <div class="gallery__left">
+                <span class="gallery__left-item list-item">Обручальные кольца</span>
+                <span class="gallery__left-item list-item">Кольца для помолвки</span>
+                <span class="gallery__left-item list-item">Браслеты</span>
+                <span class="gallery__left-item list-item">Цепочки</span>
+            </div>
+
+
+            <div class="gallery-slider swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="gallery-slider__item swiper-slide">
+                        <div class="swiper-slide__left">
+                            <img src="/img/gallery-ring.png" alt="ring">
+                        </div>
+                        <div class="swiper-slide__right">
+                            <img src="/img/gallery-ring2.png" alt="ring" class="swiper-slide__move">
+                            <img src="/img/gallery-ring3.png" alt="ring">
+                        </div>
+                    </div>
+                    <div class="gallery-slider__item swiper-slide">
+                        <div class="swiper-slide__left">
+                            <img src="/img/gallery-ring.png" alt="ring" class="swiper-slide__move">
+                        </div>
+                        <div class="swiper-slide__right">
+                            <img src="/img/gallery-ring2.png" alt="ring">
+                            <img src="/img/gallery-ring3.png" alt="ring">
+                        </div>
+                    </div>
+                    <div class="gallery-slider__item swiper-slide">
+                        <div class="swiper-slide__left">
+                            <img src="/img/gallery-ring.png" alt="ring" class="swiper-slide__move">
+                        </div>
+                        <div class="swiper-slide__right">
+                            <img src="/img/gallery-ring2.png" alt="ring">
+                            <img src="/img/gallery-ring3.png" alt="ring">
+                        </div>
+                    </div>
+                    <div class="gallery-slider__item swiper-slide">
+                        <div class="swiper-slide__left">
+                            <img src="/img/gallery-ring.png" alt="ring" class="swiper-slide__move">
+                        </div>
+                        <div class="swiper-slide__right">
+                            <img src="/img/gallery-ring2.png" alt="ring">
+                            <img src="/img/gallery-ring3.png" alt="ring">
+                        </div>
+                    </div>
+                </div>
+                <div class="gallery-slider__button swiper-button-prev"></div>
+                <div class="gallery-slider__button swiper-button-next"></div>
+                <!-- <div class="gallery-slider__pagination swiper-pagination"></div> -->
+                <div class="gallery-slider__scrollbar swiper-scrollbar"></div>
+            </div>
+        </section>
+        <div class="box">
+            <p class="box__text">Создаём отдельные изделия и<br>комплекты украшений на заказ</p>
+            <button class="button">Сделать заказ</button>
+        </div>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src="scripts/slider.js"></script>
+    <script src="scripts/burger-menu.js"></script>
+</body>
+
+</html>

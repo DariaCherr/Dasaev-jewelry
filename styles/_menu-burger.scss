@@ -1,0 +1,11 @@
+.menu-burger {
+    display: none;
+}
+
+@media screen and (max-width: 1063px) {
+    .menu-burger {
+        display: inline-block;
+        position: absolute;
+        right: 20px;
+    }
+}

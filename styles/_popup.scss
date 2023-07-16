@@ -1,0 +1,33 @@
+.popup {
+    display: none;
+}
+
+@media screen and (max-width: 1063px) {
+    .popup {
+        position: fixed;
+        left: -100%;
+        top: 100px;
+        width: 100%;
+        max-height: 100%;
+        background-color: #000;
+        z-index: 998;
+        display: flex;
+        transition: 0.3s;
+    }
+    .open {
+        left: 0;
+    }
+}
+
+@media screen and (max-width: 537px) {
+    .popup {
+        top: 130px;
+        padding: 0 10px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .popup {
+        top: 140px;
+    }
+}

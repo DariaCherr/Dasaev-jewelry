@@ -1,0 +1,108 @@
+.banner {
+    background-image: url(../img/banner.png);
+    background-position: top center;
+    background-repeat: no-repeat;
+    padding: 150px 100px 160px;
+    position: relative;
+    max-width: 1950px;
+    margin: 0 auto;
+    &::after {
+        content: '';
+        background-image: url(../icons/Group\ 193.svg);
+        background-repeat: no-repeat;
+        position: absolute;
+        width: 780px;
+        height: 1300px;
+        top: 200px;
+        right: -10px;
+    }
+    &__main-info {
+        background-image: url(../img/border.svg);
+        background-repeat: no-repeat;
+        background-size: contain;
+        padding: 60px 0 54px 45px;
+        max-width: 1500px;
+        margin: 0 auto;
+        position: relative;
+        &::before {
+            content: '';
+            background-image: url(../icons/diamond.svg);
+            position: absolute;
+            width: 156px;
+            height: 156px;
+            left: -50px;
+            top: -90px;
+            z-index: 1;
+        }
+    }
+    &__title {
+        color: #F3D098;
+        margin: 0 auto 10px;
+        font-size: 3.2rem;
+    }
+    &__title-text {
+        margin: 0;
+        font-size: 2.5rem;
+    }
+    &__title-desc {
+        margin: 10px auto 30px;
+        font-size: 1.4rem;
+    }
+}
+
+@media screen and (max-width: 952px) {
+    .banner {
+        &__title {
+            font-size: 2.5rem;
+        }
+        &__title-text {
+            margin: 0;
+            font-size: 2rem;
+        }
+        &__title-desc {
+            margin: 10px auto 20px;
+            font-size: 1.2rem;
+        }
+    }
+}
+
+@media screen and (max-width: 670px) {
+    .banner {
+        padding: 120px 50px 160px;
+    }
+}
+
+@media screen and (max-width: 542px) {
+    .banner {
+        padding: 110px 20px 160px 50px;
+        &__title {
+            font-size: 2rem;
+        }
+        &__title-text {
+            margin: 0;
+            font-size: 1.3rem;
+        }
+        &__title-desc {
+            margin: 5px auto 5px;
+            font-size: 1rem;
+        }
+        &__main-info {
+            padding: 45px 0 34px 25px;
+        }
+        &::after {
+            top: 100px;
+            right: -10px;
+        }
+    }
+}
+
+@media screen and (max-width: 401px) {
+    .banner {
+        &__title {
+            font-size: 1.9rem;
+        }
+        &__title-text {
+            font-size: 1.2rem;
+        }
+    }
+}

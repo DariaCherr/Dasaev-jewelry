@@ -1,0 +1,54 @@
+.assortment {
+    max-width: 1900px;
+    margin: 0 auto;
+    position: relative;
+    &__left {
+        img {
+            max-width: 1400px;
+            width: 100%;
+        }
+    }
+    &__right {
+        max-width: 600px;
+        position: absolute;
+        left: 964px;
+        top: 300px;
+        z-index: 999;
+        margin-right: 30px;
+    }
+    &__title {
+        font-size: 1.9rem;
+    }
+    &__text {
+        font-size: 0.9rem;
+        color: #FAFAFA;
+    }
+}
+
+@media screen and (max-width: 1324px) {
+    .assortment {
+        &__right {
+            left: calc(100% - 310px);
+            top: 100px;
+        }
+    }
+}
+
+@media screen and (max-width: 990px) {
+    .assortment {
+        &__title {
+            font-size: 1.4rem;
+        }
+        &__right {
+            margin-right: 10px;
+        }
+    }
+}
+
+@media screen and (max-width: 915px) {
+    .assortment {
+        &__right {
+            display: block;
+        }
+    }
+}

@@ -1,0 +1,53 @@
+.property {
+    padding: 23px 280px 102px;
+    text-align: center;
+    max-width: 1900px;
+    margin: 0 auto;
+    position: relative;
+    &__item-text {
+        margin-top: 30px;
+        font-size: 0.9rem;
+        vertical-align: middle;
+    }
+    &__grey {
+        color: #767474;
+        font-weight: 400;
+    }
+    &__bold {
+        font-weight: 700;
+    }
+}
+
+@media screen and (max-width: 1535px) {
+    .property {
+        padding: 0 80px 102px;
+        &__item {
+            &:not(:last-child) {
+                margin-right: 30px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .property {
+        padding: 0 80px 102px;
+        &__item {
+            &:not(:last-child) {
+                margin-right: 10px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 675px) {
+    .property {
+        padding: 0 20px 80px;
+    }
+}
+
+@media screen and (max-width: 542px) {
+    .property {
+        padding: 70px 20px 80px;
+    }
+}

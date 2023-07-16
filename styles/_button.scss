@@ -1,0 +1,27 @@
+.button {
+    width: 261px;
+    height: 58px;
+    border-radius: 39px;
+    background-color: #F3D098;
+    font-size: 1rem;
+    cursor: pointer;
+    &:hover {
+        box-shadow: -1px -1px 20px 15px rgba(243, 208, 152, 0.3);
+    }
+    &:active {
+        box-shadow: inset 0px 0px 10px 0px rgba(0, 0, 0, 1);
+    }
+}
+
+@media screen and (max-width: 610px) {
+    .button {
+        font-size: 0.9rem;
+    }
+}
+
+@media screen and (max-width: 542px) {
+    .button {
+        height: 48px;
+        width: 231px;
+    }
+}
