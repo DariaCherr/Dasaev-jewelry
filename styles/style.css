@@ -286,6 +286,12 @@ a {
     width: 100%;
   }
 }
+@media screen and (max-width: 500px) {
+  .header__logo-text {
+    color: #fff;
+    font-size: 0.55rem;
+  }
+}
 .property {
   padding: 23px 280px 102px;
   display: flex;

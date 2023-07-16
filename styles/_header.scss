@@ -45,3 +45,12 @@
         }
     }
 }
+
+@media screen and (max-width: 500px) {
+    .header {
+        &__logo-text {
+            color: #fff;
+            font-size: 0.55rem;
+        }
+    }
+}
