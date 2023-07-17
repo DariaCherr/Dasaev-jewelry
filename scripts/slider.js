@@ -11,7 +11,7 @@ const swiper = new Swiper('.gallery-slider', {
     //     type: 'progressbar',
     // },
     spaceBetween: 30,
-    slidesPerView: 1,
+
 
     loop: true,
 
@@ -24,5 +24,4 @@ const swiper = new Swiper('.gallery-slider', {
         enabled: true,
         sensitivity: 10,
     },
-
 });
